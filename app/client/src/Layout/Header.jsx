@@ -1,10 +1,8 @@
 import React from 'react'
-import GirlHoldingCat from '../assets/images/girl-holding-cat.png'
-const Header = () => {
+const Header = ({children}) => {
   return (
     <div className=' w-full'>
-      {/* <h1 className="text-center text-xl">Adopt the purrrfect kitty today !</h1> */}
-      {/* <img src={GirlHoldingCat} className="w-full h-96" /> */}
+      <h1 className="text-xl text-center bg-slate-900 text-white tracking-wider py-6 font-bold md:text-2xl md:mb-10">{children}</h1>
     </div>
   )
 }

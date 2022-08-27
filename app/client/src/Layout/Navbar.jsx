@@ -6,7 +6,7 @@ import HamburgerMenu from '../components/Nav/Hamburger';
 const Navbar = () => {
   return (
     <>
-      <div className='bg-violet-800 h-20 px-6 flex justify-between items-center sticky top-0 mb-8 z-50'>
+      <div className='bg-violet-800 h-20 px-6 flex flex-wrap justify-between items-center sticky top-0 z-50'>
         <Logo></Logo>
         <Navigation />
       </div>

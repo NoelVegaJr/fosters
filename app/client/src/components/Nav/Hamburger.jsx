@@ -14,7 +14,7 @@ const HamburgerMenu = () => {
     setShowSideNav(false)
   }
 
-  const classes = showSideNav ? "-translate-x-full" : 'translate-x-0'
+  const classes = showSideNav ? 'translate-x-0': "-translate-x-full"
 
   return (
     <>

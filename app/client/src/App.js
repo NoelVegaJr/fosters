@@ -1,16 +1,19 @@
 import Navbar from "./Layout/Navbar"
-import Header from './Layout/Header'
-import CatList from "./components/Cat/CatList"
+import { Outlet } from "react-router-dom"
+import Footer from "./Layout/Footer"
+import { ChakraProvider } from '@chakra-ui/react';
 
 export default function App() {
   console.log("App Rendering")
   return (
     <>
-    <Navbar />
-    <main id="main">
-      <Header />
-      <CatList />
-    </main>
+    <ChakraProvider>
+      <div className="flex flex-col min-h-screen">
+          <Navbar />
+            <Outlet />
+          <Footer />
+      </div>
+    </ChakraProvider>
 
     </>
 
